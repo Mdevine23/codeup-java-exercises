@@ -10,5 +10,6 @@ public class ShapesTest {
         System.out.println("Perimeter of box2 is " + box2.getPerimeter());
     }
     static Rectangle box1 = new Rectangle(4, 5);
-    static Rectangle box2 = new Square(5);
+    static Square box2 = new Square(5) {
+    };
 }
