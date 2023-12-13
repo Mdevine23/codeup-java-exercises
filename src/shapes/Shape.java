@@ -1,9 +1,5 @@
 package shapes;
 
-abstract class Shape {
-    public static void main(String[] args) {
+public abstract class Shape {
 
-    }
-    abstract double getPerimeter();
-    abstract double getArea();
 }

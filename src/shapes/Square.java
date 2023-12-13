@@ -1,26 +1,23 @@
 package shapes;
 
-public class Square extends Quadrilateral implements IMeasurable{
-
-
+public class Square extends Quadrilateral implements Measurable{
     public Square(double side) {
         super(side, side);
     }
 
-    public static void main(String[] args) {
-        Square s = new Square(5) {
-        };
-        System.out.println("Area of square is " + s.getArea());
-        System.out.println("Perimeter of square is " + s.getPerimeter());
+    public void setLength(double side) {
+        this.length = side;
+    }
+    public void setWidth(double side) {
+        this.width = side;
     }
 
-    @Override
-    void setLength(double length) {
-
+    public double getPerimeter() {
+        return (2 * length) + (2 * width);
     }
 
-    @Override
-    void setWidth(double width) {
-
+    public double getArea() {
+        return length * width;
     }
+
 }
